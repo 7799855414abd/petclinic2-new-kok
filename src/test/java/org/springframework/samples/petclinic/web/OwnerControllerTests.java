@@ -117,7 +117,7 @@ public class OwnerControllerTests {
         mockMvc.perform(get("/owners/{ownerId}/edit", TEST_OWNER_ID))
             .andExpect(status().isOk())
             .andExpect(model().attributeExists("owner"))
-            .andExpect(model().attribute("owner", hasProperty("lastName", is("Franklin"))))
+            .andExpect(model().attribute("owner", hasProperty("lastName", is("Franklinguygfyuuyfyj"))))
             .andExpect(model().attribute("owner", hasProperty("firstName", is("George"))))
             .andExpect(model().attribute("owner", hasProperty("address", is("110 W. Liberty St."))))
             .andExpect(model().attribute("owner", hasProperty("city", is("Madison"))))
